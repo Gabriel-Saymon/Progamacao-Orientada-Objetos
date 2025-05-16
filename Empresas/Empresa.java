@@ -17,6 +17,5 @@ public class Empresa {
 
     public void addDepartamento(Departamento departamento){
         this.departamentos.add(departamento);
-    }
-    
+    }   
 }

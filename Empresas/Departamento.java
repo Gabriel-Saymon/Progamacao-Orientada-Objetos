@@ -15,4 +15,15 @@ public class Departamento {
         this.funcionarios.add(funcionario);
     }
     
+    public float mediaFuncionarios(){
+        float soma = 0.0, media = 0.0;
+        int qtd = 0;
+
+        for(Pessoa pessoa : funcionarios){
+            soma += pessoa.getIdade();
+            qtd++;
+        }
+        media = soma/qtd;
+        return media;
+    }
 }
