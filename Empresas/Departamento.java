@@ -5,6 +5,7 @@ public class Departamento {
 
     public Departamento (String nome){
         this.nome = nome;
+        this.funcionarios = new java.util.HashSet<>();
     }
 
     public String getName(){
@@ -16,7 +17,7 @@ public class Departamento {
     }
     
     public float mediaFuncionarios(){
-        float soma = 0.0, media = 0.0;
+        float soma = 0, media = 0;
         int qtd = 0;
 
         for(Pessoa pessoa : funcionarios){
@@ -25,5 +26,13 @@ public class Departamento {
         }
         media = soma/qtd;
         return media;
+    }
+
+    public void printaPessoasDepartamento(){
+        int i = 1;
+        for(Pessoa pessoa : funcionarios){
+            System.out.println("\t" + i + "-" +pessoa.getName() +".");
+            i++;
+        }
     }
 }

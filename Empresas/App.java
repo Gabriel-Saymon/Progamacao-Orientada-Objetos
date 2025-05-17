@@ -8,9 +8,10 @@ public class App{
         */
         Empresa empresa = new Empresa("WebDreams");
         Departamento desenvolvimento = new Departamento("developers");
-        Departamento marketing = new Departamento("marketeiros");
+        Departamento marketing = new Departamento("marketing");
 
         empresa.addDepartamento(desenvolvimento);
+        empresa.addDepartamento(marketing);
 
         /*
          * Criacao de pessoas.
@@ -35,8 +36,12 @@ public class App{
         desenvolvimento.addFuncionarios(person3);
         marketing.addFuncionarios(person4);
 
+        /*
+         * Prints de teste.
+        */
 
-        
-
+        System.out.println("\n\t\t" + "-- " + empresa.getName() + " --");
+        empresa.printaTudo();
+    
     }
 }
