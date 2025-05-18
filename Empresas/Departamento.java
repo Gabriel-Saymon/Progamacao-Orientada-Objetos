@@ -15,24 +15,39 @@ public class Departamento {
     public void addFuncionarios (Pessoa funcionario){
         this.funcionarios.add(funcionario);
     }
-    
-    public float mediaFuncionarios(){
-        float soma = 0, media = 0;
-        int qtd = 0;
 
-        for(Pessoa pessoa : funcionarios){
-            soma += pessoa.getIdade();
-            qtd++;
-        }
-        media = soma/qtd;
-        return media;
-    }
-
-    public void printaPessoasDepartamento(){
+    public void printaPessoasDepartamento() {
         int i = 1;
-        for(Pessoa pessoa : funcionarios){
-            System.out.println("\t" + i + "-" +pessoa.getName() +".");
+        for (Pessoa pessoa : funcionarios) {
+            System.out.println("\t" + i + " - " + pessoa.getName() + " - " + pessoa.getIdade() + " anos.");
             i++;
         }
+    }
+
+    public float getMedia(){
+        float media = 0;
+        int i = 1;
+
+        for (Pessoa pessoa : funcionarios) {
+            media += pessoa.getIdade();
+            i++;
+        }
+
+        if(i-1 == 0) return media;
+            return media/(i-1);
+    }
+
+    public int getFuncionarios() {
+        return funcionarios.size();
+    }
+
+    public float getAllIdades(){
+        float soma = 0;
+
+        for (Pessoa pessoa : funcionarios) {
+            soma += pessoa.getIdade();
+            
+        }
+        return soma;
     }
 }
