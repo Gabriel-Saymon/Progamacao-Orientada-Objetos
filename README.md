@@ -2,9 +2,7 @@
 
 Este diretório é voltado ao estudo e desenvolvimento de atividades práticas realizadas durante o curso de **Programação Orientada a Objetos** utilizando a linguagem **Java**.
 
-Para o **primeiro exercício** :
-
-## 📁 Estrutura do Projeto
+## 📁 **Empresas (1º exercício)** :
 
 O projeto simula uma estrutura organizacional com empresas, departamentos e funcionários, permitindo calcular e exibir informações como a média de idade dos colaboradores.
 
