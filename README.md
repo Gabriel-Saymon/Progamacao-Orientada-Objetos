@@ -11,6 +11,9 @@ O projeto simula uma estrutura organizacional com empresas, departamentos e func
 - **E1**: Implementações de uma classe `Ponto`, uma classe `Triangulo` e um programa que calcula o perímetro de um triângulo a partir das coordenadas dos vértices.
 - **E2**: Hierarquia de classes para representar produtos de uma loja (livros e jogos de tabuleiro), incluindo override de `toString()`, e um programa que instancia e imprime diferentes produtos.
 
+## 📁 **usandomaps (3º exercício)** :
+
+Este projeto implementa um sistema bancário simples em Java. Ele inclui classes para representar um banco, agência e conta de clientes, além de uma aplicação de console para interação.
 
 ## 📁 **labdomicilioeleitoral (4º exercício)** :
 
