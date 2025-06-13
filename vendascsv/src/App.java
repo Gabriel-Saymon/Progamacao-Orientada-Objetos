@@ -3,6 +3,11 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import Loja.Loja;
+import Loja.Produto;
+import Loja.Venda;
+
+
 
 public class App {
     public static void main(String[] args) {
