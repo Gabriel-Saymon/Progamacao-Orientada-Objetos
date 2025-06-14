@@ -1,5 +1,6 @@
 package Loja;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,6 +23,11 @@ public class Loja {
         Produto p = produtos.get(idProduto);
         Venda venda = new Venda(idVenda, quantidade, p);
         vendas.put(idVenda, venda);
+        p.addVenda(venda);
         return venda;
+    }
+
+    public Collection<Venda> getVendas() {
+        return vendas.values();
     }
 }

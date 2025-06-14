@@ -70,3 +70,37 @@ Total geral: R$ 1.495,00
 - Use `BufferedReader` e `String.split(",")` para ler os arquivos linha a linha. Veja exemplo de uso de `BufferedReader` em `App.java`.
 - Converta valores com `Integer.parseInt()` e `Double.parseDouble()`.
 - Use `String.format()` ou `System.out.printf()` para formatar a saída.
+
+## Estrutura do Projeto
+
+```
+.
+├── bin
+├── src
+│   ├── Loja
+│   │   ├── Loja.java      
+│   │   ├── Produto.java    
+│   │   └── Venda.java      
+│   └── App.java
+│   └── Leitor.java
+├── loja.png
+├── loja.pumpl
+├── produtos.csv
+├── vendas.csv           
+└── README.md               
+```
+
+## Como Executar
+
+1. Garanta que `produtos.csv` e `vendas.csv` estejam na raiz do projeto.
+2. Compile as classes Java no diretório de fontes e gere a pasta `bin` para as classes compiladas:
+   ```
+   javac -d bin src/Loja/*.java src/Leitor.java src/App.java
+   ```
+3. Execute a aplicação apontando para o diretório `bin`:
+   ```
+   java -cp bin App
+   ```
+4. A saída mostrará cada venda detalhada e o total geral formatado em reais.
+
+---

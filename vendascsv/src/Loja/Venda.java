@@ -13,6 +13,10 @@ public class Venda {
         return quantidade;
     }
 
+    public Produto getProduto() {
+        return produtoVendido;
+    }
+
     public Venda (int idVenda, int quantidade, Produto p){
         this.idVenda = idVenda;
         this.quantidade = quantidade;

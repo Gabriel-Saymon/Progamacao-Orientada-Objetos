@@ -29,7 +29,7 @@ public class Produto {
         this.price = price;
     }
 
-    public void AddVenda(Venda venda){
+    public void addVenda(Venda venda){
         this.vendasProduto.add(venda);
     }
 

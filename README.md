@@ -18,3 +18,10 @@ Este projeto implementa um sistema bancário simples em Java. Ele inclui classes
 ## 📁 **labdomicilioeleitoral (4º exercício)** :
 
 Este projeto é um exemplo de aplicação Java para gerenciamento de domicílio eleitoral. Ele permite cadastrar, consultar, atualizar e remover informações sobre eleitores e seus respectivos domicílios eleitorais.
+
+## 📁 **vendascsv (5º exercício)** :
+
+Este projeto é um exemplo de aplicação Java com o objetivo de praticar:
+- Leitura de arquivos CSV em Java;
+- Uso de coleções;
+- Associação entre objetos via chave (id).
